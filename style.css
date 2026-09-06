@@ -1,0 +1,31 @@
+*{box-sizing:border-box}
+body{margin:0;background:#101010;color:#f4f0e8;font-family:Arial,sans-serif}
+header{height:76px;border-bottom:1px solid #333;display:flex;align-items:center;justify-content:space-between;padding:0 7%;position:sticky;top:0;background:#101010}
+.logo{color:#fff;text-decoration:none;font-weight:bold;letter-spacing:4px}
+nav{display:flex;gap:28px}
+nav a{color:#aaa;text-decoration:none}
+nav a:hover{color:#fff}
+main{max-width:1150px;margin:auto;padding:80px 7%}
+.hero{min-height:520px;display:grid;grid-template-columns:1fr 400px;align-items:center;gap:80px}
+.small{color:#c6a66b;letter-spacing:3px;font-size:12px;font-weight:bold}
+h1{font-size:clamp(45px,6vw,76px);line-height:1.02;letter-spacing:-3px;margin:18px 0 25px}
+.text{color:#aaa;font-size:19px;line-height:1.7;max-width:600px}
+.button{display:inline-block;margin-top:22px;padding:14px 22px;border:1px solid #c6a66b;color:#fff;text-decoration:none}
+.button:hover{background:#c6a66b;color:#111}
+.mosaic{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;transform:rotate(4deg)}
+.mosaic i{display:block;aspect-ratio:1;background:#c6a66b;clip-path:polygon(4% 5%,95% 0,100% 92%,7% 100%)}
+.mosaic i:nth-child(2n){background:#66878a}
+.mosaic i:nth-child(3n){background:#9b5b4c}
+.mosaic i:nth-child(5n){background:#ddd09b}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.cards article{border:1px solid #333;padding:28px;background:#171717}
+.cards b,.timeline span{color:#c6a66b}
+.cards h2{margin:12px 0}
+.cards p,.timeline p{color:#999;line-height:1.7}
+.history{max-width:900px}
+.timeline{margin:60px 0;border-left:1px solid #555;padding-left:35px}
+.timeline section{display:flex;gap:25px;margin-bottom:48px}
+.timeline span{font-weight:bold;min-width:25px}
+.timeline h2{margin:0 0 8px;font-size:27px}
+footer{text-align:center;border-top:1px solid #333;color:#666;padding:28px;font-size:13px}
+@media(max-width:750px){header{padding:0 5%;height:65px}.hero{grid-template-columns:1fr;gap:40px}.mosaic{max-width:360px;margin:auto}.cards{grid-template-columns:1fr}main{padding:55px 5%}h1{letter-spacing:-2px}}
